@@ -1,0 +1,11 @@
+.contador{
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.contador :hover{
+    color: rgb(40, 102, 5);
+}
+
+.botones_contador{
+  font-size: 30px;
+}

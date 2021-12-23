@@ -1,33 +1,39 @@
 import React from 'react'
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
-import { CartWidget } from '../CartWidget/CartWidget'
-import { ItemListContainer } from '../ItemListContainer/ItemListContainer'
+import { CardWidget } from '../CardWidget/CardWidget'
+import "./navbar.css"
 
 export const NavBar = () => {
     return (
-        <header>
-        <Navbar className="">
-        <Navbar.Brand href="#home">Panaderia la eficaz</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-            <Nav.Link href="#home">inicio</Nav.Link>
-            <Nav.Link href="#link">productos</Nav.Link>
-            <NavDropdown title="empresa" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">contacto</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">envios</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">nosotros</NavDropdown.Item>
-            </NavDropdown>
-            <CartWidget/>
-        </Nav>
-        </Navbar.Collapse>
-</Navbar>
 
-<ItemListContainer greeting="bienvenido a la Eficaz"/>
+<>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Proyecto React</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">tecnologia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">accesorios</a>
+      </li>
+      <li class="nav-item">
+        <CardWidget/>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-</header>
-    
 
+
+
+
+
+        </>
     )
 }
