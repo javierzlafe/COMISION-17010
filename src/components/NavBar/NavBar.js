@@ -1,39 +1,43 @@
+
 import React from 'react'
-import { CardWidget } from '../CardWidget/CardWidget'
-import "./navbar.css"
+import { useContext } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { UserAuthContext } from '../../context/UserAuthContext'
+import { CartWidget } from './CartWidget'
+import './NavBar.scss'
+import { CartContext } from '../../context/CartContext'
+//import logo2 from './unLogo.png';
 
-export const NavBar = () => {
+
+
+export const NavBar = ( {logo} ) => {
+
+   const {vaciarCarrito} = useContext (CartContext);
+    const { isAuthenticated, setIsAuthenticated} = useContext(UserAuthContext);
+    const handlesubmit = () => {
+        setIsAuthenticated(false);
+        vaciarCarrito();
+
+    }
     return (
+        <header className="header" >
+           {//<img src={logo2} className="logo2" align="center"></img>//
+           }
+            <h1>{logo}</h1>
 
-<>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Proyecto React</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">inicio <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">tecnologia</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">accesorios</a>
-      </li>
-      <li class="nav-item">
-        <CardWidget/>
-      </li>
-    </ul>
-  </div>
-</nav>
+            <div>
+                <nav >
+                    <NavLink activeClassName={'activeLink'} exact to="/">Inicio</NavLink>
+                    <NavLink activeClassName={'activeLink'} exact to="/productos/tecnologia">Tecnologia</NavLink>
+                    <NavLink activeClassName={'activeLink'} exact to="/productos/accesorios">Accesorios</NavLink>
 
+                    <NavLink activeClassName={'activeLink'} exact to="/contacto">Historial</NavLink>
 
+                    <Link to="/cart"><CartWidget/></Link>
+                    { !isAuthenticated || <button className="botonSalir" onClick={handlesubmit}> Salir</button> }
 
-
-
-
-        </>
+                </nav>
+            </div>
+        </header>
     )
 }

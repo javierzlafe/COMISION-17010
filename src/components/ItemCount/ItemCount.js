@@ -1,29 +1,37 @@
-import React, { useState } from 'react'
-import "./itemcount.css"
+import React from 'react'
 
-export const ItemCount = ({stock, initial, onAdd}) => {
 
-    const [contador, setContador]= useState(initial)
-    function restar(){
-        if (contador > initial){
-            setContador(contador -1) 
+export const ItemCount = ( {cantidad, modify, max} ) => {
+
+    const handleRestar = () => {
+        if (cantidad > 0)  {
+            modify(cantidad - 1)
         }
     }
-    function sumar(){
-        if (contador < stock){
-            setContador(contador +1) 
+
+    const handleSumar = () => {
+        if (cantidad < max) {
+            modify(cantidad + 1)
         }
     }
-    
 
     return (
-        <div className='contador'>
-            <span className='botones_contador' onClick={restar}>-</span>
-            <span className='botones_contador'>{contador}</span>
-            <span className='botones_contador' onClick={sumar}>+</span>
-            <div>
-            <button disabled={contador === initial} onClick={()=>onAdd(contador)}>agregar al carrito</button>
-            </div>
+        <div>
+            <button
+                onClick={handleRestar}
+                className="btn btn-primary"
+            >
+                -
+            </button>
+
+            <span className="mx-3">{cantidad}</span>
+
+            <button
+                onClick={handleSumar}
+                className="btn btn-primary"
+            >
+                +
+            </button>
         </div>
     )
 }

@@ -1,4 +1,5 @@
-export const productos =[
+
+export const stock = [
     {
         id: 1,
         name: "iphone 12 pro",
@@ -6,8 +7,7 @@ export const productos =[
         price: 230000,
         img: "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/054/848/products/graphite1-c6a0ea330d5a8a5ddb16245702688771-640-0.png",
         category: 'tecnologia',
-        stock: 8,
-        initial: 0
+        stock: 8
     },
     {
         id: 2,
@@ -16,8 +16,7 @@ export const productos =[
         price: 120000,
         img: "http://d3ugyf2ht6aenh.cloudfront.net/stores/892/141/products/hp-notebook-15-dy1078nr-1221-520109b6ea5398cdcf15984550860111-640-0.jpg",
         category: 'tecnologia',
-        stock: 4,
-        initial: 0
+        stock: 4
     },
     {
         id: 3,
@@ -26,8 +25,7 @@ export const productos =[
         price: 1800,
         img: "https://d2r9epyceweg5n.cloudfront.net/stores/001/231/930/products/k07-mobile-phone-bluetooth-selfie-stick-with-tripod-integrated-multi-function-mini-photo-live-artifact-universal-jpg_640x6401-f21e95ce7b0b86afbe16027065076032-640-01-996aa8eb75cebcfcf016306765744548-640-0.jpg",
         category: 'accesorios',
-        stock: 20,
-        initial: 0
+        stock: 20
     },
     {
         id: 4,
@@ -36,8 +34,7 @@ export const productos =[
         price: 6000,
         img: "https://www.mylshop.com.ar/wp-content/uploads/2021/01/reloj-inteligente-deportivo-t03-ip68-reloj-inteligente-deportivo-con-control-de-temperatura-continua-de-24-horas1-f2e6e90a6f4e23ce3916068633265287-640-0.jpg",
         category: 'accesorios',
-        stock: 20,
-        initial: 0
+        stock: 20
     },
    
     {
@@ -47,8 +44,7 @@ export const productos =[
         price: 9.999,
         img:"http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/Items/4490_800.jpg",
         category:'tecnologia',
-        stock:10,
-        initial: 0
+        stock:10
     },
     {
         id: 6,
@@ -57,8 +53,7 @@ export const productos =[
         price: 45400,
         img:"http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/Items/4475_800.jpg",
         category:'tecnologia',
-        stock:15,
-        initial: 0
+        stock:15
     },
     {
         id: 7,
@@ -67,8 +62,7 @@ export const productos =[
         price:48300,
         img:"https://images.fravega.com/f1000/c9f97b195f09106a00593a967b6241e2.jpg",
         category:'tecnologia',
-        stock:30,
-        initial: 0
+        stock:30
     },
     {
         id: 8,
@@ -78,7 +72,6 @@ export const productos =[
         img:"https://images.samsung.com/is/image/samsung/ar-galaxy-a51-a515-sm-a515fzklaro-front-299685233?$684_547_PNG$",
         category:'tecnologia',
         stock:15,
-        initial: 0
     },
     {
         id: 9,
@@ -87,8 +80,7 @@ export const productos =[
         price: 1490,
         img: "https://www.mylshop.com.ar/wp-content/uploads/2019/09/soporte-tablet-auto-ipad-samsung-asus-acer-de-7-14-calidad-D_NQ_NP_665235-MLA31054545379_062019-Q.jpg",
         category:'accesorios',
-        stock:30,
-        initial: 0
+        stock:30
     },
     {
         id: 10,
@@ -97,8 +89,7 @@ export const productos =[
         price:2340,
         img:"https://bangho.vteximg.com.br/arquivos/ids/159960-590-590/MOUSE-LOGITECH-M190--1-.jpg?v=637559924444870000",
         category:'accesorios',
-        stock:10,
-        initial: 0
+        stock:10
     },
     {
         id: 11,
@@ -107,8 +98,7 @@ export const productos =[
         price: 61890,
         img:"http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/Items/4229_800.jpg",
         category:'tecnologia',
-        stock:5,
-        initial: 0
+        stock:5
     },
     {
         id: 12,
@@ -117,8 +107,7 @@ export const productos =[
         price:460,
         img:"https://http2.mlstatic.com/D_631819-MLA31352271834_072019-O.jpg",
         category:'accesorios',
-        stock:20,
-        initial: 0
+        stock:20
     },
     {
         id: 13,
@@ -127,8 +116,7 @@ export const productos =[
         price: 13590,
         img:"http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/Items/1341_800.jpg",
         category:'accesorios',
-        stock:10,
-        initial: 0
+        stock:10
     },
     {
         id: 14,
@@ -137,8 +125,7 @@ export const productos =[
         price: 97850,
         img: "https://http2.mlstatic.com/D_NQ_NP_995563-MLA43652886047_102020-O.jpg",
         category:'tecnologia',
-        stock:10,
-        initial: 0
+        stock:10
     },
     {
         id: 15,
@@ -147,8 +134,7 @@ export const productos =[
         price: 48620,
         img: "https://http2.mlstatic.com/D_NQ_NP_965319-MLM43582391744_092020-O.jpg",
         category:'tecnologia',
-        stock:10,
-        initial: 0
+        stock:10
     },
     {
         id: 16,
@@ -157,8 +143,7 @@ export const productos =[
         price: 35890,
         img:"https://www.venex.com.ar/products_images/1585842748_monitor_22_led_asus_vp228he_cf_fhd_1ms_75hz.jpg",
         category:'accesorios',
-        stock:20,
-        initial: 0
+        stock:20
     },
     {
         id: 17,
@@ -167,9 +152,6 @@ export const productos =[
         price:34200,
         img:"http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/Items/4041_800.jpg",
         category:'accesorios',
-        stock:20,
-        initial: 0
-
+        stock:20
     }
-]
-
+    ]
