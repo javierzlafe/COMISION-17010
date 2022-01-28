@@ -14,7 +14,7 @@ import { UIProvider } from './context/UIContext';
 import { UserAuthContext } from './context/UserAuthContext';
 import { useContext } from 'react';
 import { UserAuthenticate } from './components/UserAuthenticate/UserAuthenticate';
-import { Clock } from './ejemplos/Clock/Clock';
+import { Clock } from './components/Clock/Clock';
 
 
 
@@ -29,7 +29,7 @@ function App() {
         <CartProvider>
 
           <BrowserRouter>
-            <NavBar logo= "Proyecto Final"/>
+            <NavBar logo= "E-comerce React"/>
             
 
             <Clock/>

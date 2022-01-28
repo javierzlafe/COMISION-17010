@@ -7,4 +7,9 @@
 .loguin {
   text-align: center;
 }
+
+#usuario {
+  margin-left: 50%;
+  background-color: #1ee01e;
+}
 /*# sourceMappingURL=UserAutenticate.css.map */
